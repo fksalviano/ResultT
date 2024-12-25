@@ -5,7 +5,7 @@ Simple generic Result pattern model with Error and implicit conversions.
 The Error result is implicit converted to the expected result type Result\<T\>:
 
 
-```
+```cs
     using ResultT;
 
     Task<Result<Model>> GetById(int id)
@@ -23,7 +23,7 @@ The Error result is implicit converted to the expected result type Result\<T\>:
     }
 ```
 
-```
+```cs
     using ResultT;
 
     Task<Result> Update(Model model)
@@ -45,7 +45,7 @@ The Error result is implicit converted to the expected result type Result\<T\>:
 ### Simplifyng the code with using static
 
 
-```
+```cs
     using static ResultT.Results;
 
     Task<Result<Model>> GetById(int id)
@@ -63,7 +63,7 @@ The Error result is implicit converted to the expected result type Result\<T\>:
     }
 ```
 
-```
+```cs
     using ResultT;
 
     Task<Result> Update(Model model)
