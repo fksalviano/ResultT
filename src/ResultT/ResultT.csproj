@@ -4,15 +4,15 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
 	  <PackageId>ResultT</PackageId>
     <Authors>Fabio Salviano</Authors>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Description>
-      Simple generic Result model with Error and implicit conversions.
-      https://github.com/fksalviano/ResultT
-    </Description>
+    <Description>Simple generic Result model with Error and implicit conversions.</Description>
+    <PackageProjectUrl>https://github.com/fksalviano/ResultT</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fksalviano/ResultT</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>        
