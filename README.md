@@ -18,7 +18,7 @@ Task<Result<Model>> GetById(int id)
 {
     try
     {
-        var model = _repository.Get(id);
+        var model = repository.Get(id);
 
         return Results.Ok(model);
     }
@@ -38,7 +38,7 @@ using ResultT;
 
 Task<Result> Update(Model model)
 {
-    var rowsUpdated = _repository.Update(model);
+    var rowsUpdated = repository.Update(model);
 
     if (rowsUpdated > 0)
     {
@@ -56,13 +56,14 @@ Task<Result> Update(Model model)
 
 
 ```cs
+using ResultT;
 using static ResultT.Results;
 
 Task<Result<Model>> GetById(int id)
 {
     try
     {
-        var model = _repository.Get(id);
+        var model = repository.Get(id);
 
         return Ok(model);
     }
@@ -78,11 +79,12 @@ Task<Result<Model>> GetById(int id)
 ```
 
 ```cs
+using ResultT;
 using static ResultT.Results;
 
 Task<Result> Update(Model model)
 {
-    var rowsUpdated = _repository.Update(model);
+    var rowsUpdated = repository.Update(model);
 
     if (rowsUpdated > 0)
     {
@@ -105,7 +107,7 @@ Task<Result<Model>> GetById(int id)
 {
     try
     {
-        var model = _repository.Get(id);
+        var model = repository.Get(id);
 
         return model;
     }
@@ -122,7 +124,7 @@ using ResultT;
 
 Task<Result> Update(Model model)
 {   
-    var rowsUpdated = _repository.Update(model);
+    var rowsUpdated = repository.Update(model);
 
     if (rowsUpdated > 0)
     {
