@@ -5,8 +5,10 @@ name: Build
 
 on:
   push:    
-    branches-ignore: 
-      - main
+    branches:
+      - '**'
+    tags-ignore:
+      - '**'
   pull_request:
   workflow_call:
 
